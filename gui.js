@@ -194,7 +194,7 @@ details summary ~ * {
                             },
                             body: await encodeValues({
                                 name: x.name,
-                                addedTokens: 250,
+                                addedTokens: 29999,
                                 addedXp: 300
                             }, e.secret)
                         });
@@ -207,7 +207,7 @@ details summary ~ * {
                             },
                             body: await encodeValues({
                                 name: x.name,
-                                addedTokens: 250,
+                                addedTokens: 29999,
                                 addedXp: 300
                             }, e.secret)
                         }).then(() => alert('Added daily rewawrds!')).catch(() => alert('There was an error when adding rewards!'));;
@@ -223,13 +223,13 @@ details summary ~ * {
             'Spam Open Boxes': () => {
                 let box = prompt(`Which box do you want to open? (e.g. Space)`);
                 let boxes = {
-                    safari: 25,
-                    aquatic: 20,
-                    bot: 20,
-                    space: 20,
-                    breakfast: 15,
-                    medieval: 15,
-                    wonderland: 15
+                    safari: 1,
+                    aquatic: 1,
+                    bot: 1,
+                    space: 1,
+                    breakfast: 1,
+                    medieval: 1,
+                    wonderland: 1
                 }
                 if (!Object.keys(boxes).includes(box.toLowerCase())) return alert('I could not find that box!');
                 let amount = prompt('How many boxes do you want to open?');
